@@ -1,12 +1,10 @@
 {
-  "name": "markerjs2",
-  "version": "2.31.2",
-  "description": "JavaScript image annotation",
+  "name": "image_anotation",
+  "version": "0.0.1",
+  "description": "  image annotation",
   "main": "markerjs2.js",
   "module": "markerjs2.esm.js",
-  "types": "markerjs2.d.ts",
-  "author": "Alan Mendelevich",
-  "license": "SEE LICENSE IN LICENSE",
+  "types": "markerjs2.d.ts", 
   "scripts": {
     "lint": "eslint src",
     "build": "yarn lint && rollup --config rollup.config.prod.js",
