@@ -1,7 +1,7 @@
 {
   "name": "image_anotation",
   "version": "0.0.1",
-  "description": "  image annotation",
+  "description": "image annotation",
   "main": "markerjs2.js",
   "module": "markerjs2.esm.js",
   "types": "markerjs2.d.ts", 
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ailon/markerjs2"
+    "url": "https://github.com/Elementals-technical/image_annotation"
   },
   "keywords": [
     "annotate",
