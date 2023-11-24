@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { Activator, FrameMarker, MarkerArea, Style, StyleManager } from '../../src';
+import { FrameMarker, MarkerArea, Style, StyleManager } from '../../src';
 import { DisplayMode } from '../../src/core/Settings';
 import { MarkerAreaState } from '../../src/MarkerAreaState';
 

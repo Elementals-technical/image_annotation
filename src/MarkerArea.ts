@@ -1,5 +1,5 @@
 import { SvgHelper } from './core/SvgHelper';
-import { Activator } from './core/Activator';
+// import { Activator } from './core/Activator';
 import { Renderer } from './core/Renderer';
 
 import Logo from './assets/markerjs-logo-m.svg';
@@ -459,13 +459,13 @@ export class MarkerArea {
       this.onPopupTargetResize();
     }
 
-    if (!Activator.isLicensed) {
-      // NOTE:
-      // before removing this call please consider supporting marker.js
-      // by visiting https://markerjs.com/ for details
-      // thank you!
-      this.addLogo();
-    }
+    // if (!Activator.isLicensed) {
+    //   // NOTE:
+    //   // before removing this call please consider supporting marker.js
+    //   // by visiting https://markerjs.com/ for details
+    //   // thank you!
+    //   this.addLogo();
+    // }
 
     this._isOpen = true;
     this._isFocused = true;
@@ -723,7 +723,7 @@ export class MarkerArea {
       this.toolbar.adjustLayout();
     }
 
-    this.positionLogo();
+    // this.positionLogo();
 
     this.scaleMarkers(scaleX, scaleY);
 
@@ -879,55 +879,55 @@ export class MarkerArea {
    *
    * thank you!
    */
-  private addLogo() {
-    this.logoUI = document.createElement('div');
-    this.logoUI.style.display = 'inline-block';
-    this.logoUI.style.margin = '0px';
-    this.logoUI.style.padding = '0px';
-    this.logoUI.style.fill = '#333333';
+  // private addLogo() {
+  //   this.logoUI = document.createElement('div');
+  //   this.logoUI.style.display = 'inline-block';
+  //   this.logoUI.style.margin = '0px';
+  //   this.logoUI.style.padding = '0px';
+  //   this.logoUI.style.fill = '#333333';
 
-    const link = document.createElement('a');
-    link.href = 'https://markerjs.com/';
-    link.target = '_blank';
-    link.innerHTML = Logo;
-    link.title = 'Powered by marker.js';
+  //   const link = document.createElement('a');
+  //   link.href = 'https://markerjs.com/';
+  //   link.target = '_blank';
+  //   link.innerHTML = Logo;
+  //   link.title = 'Powered by marker.js';
 
-    link.style.display = 'grid';
-    link.style.alignItems = 'center';
-    link.style.justifyItems = 'center';
-    link.style.padding = '3px';
-    link.style.width = '20px';
-    link.style.height = '20px';
+  //   link.style.display = 'grid';
+  //   link.style.alignItems = 'center';
+  //   link.style.justifyItems = 'center';
+  //   link.style.padding = '3px';
+  //   link.style.width = '20px';
+  //   link.style.height = '20px';
 
-    this.logoUI.appendChild(link);
+  //   this.logoUI.appendChild(link);
 
-    this.editorCanvas.appendChild(this.logoUI);
+  //   this.editorCanvas.appendChild(this.logoUI);
 
-    this.logoUI.style.position = 'absolute';
-    this.logoUI.style.pointerEvents = 'all';
-    this.positionLogo();
-  }
+  //   this.logoUI.style.position = 'absolute';
+  //   this.logoUI.style.pointerEvents = 'all';
+  //   this.positionLogo();
+  // }
 
-  private positionLogo() {
-    if (this.logoUI) {
-      if (this.uiStyleSettings.logoPosition !== 'right') {
-        this.logoUI.style.left = `${this.markerImageHolder.offsetLeft + 10}px`;
-      } else {
-        this.logoUI.style.left = `${
-          this.markerImageHolder.offsetLeft +
-          this.markerImageHolder.offsetWidth -
-          this.logoUI.clientWidth -
-          10
-        }px`;
-      }
-      this.logoUI.style.top = `${
-        this.markerImageHolder.offsetTop +
-        this.markerImageHolder.offsetHeight -
-        this.logoUI.clientHeight -
-        10
-      }px`;
-    }
-  }
+  // private positionLogo() {
+  //   if (this.logoUI) {
+  //     if (this.uiStyleSettings.logoPosition !== 'right') {
+  //       this.logoUI.style.left = `${this.markerImageHolder.offsetLeft + 10}px`;
+  //     } else {
+  //       this.logoUI.style.left = `${
+  //         this.markerImageHolder.offsetLeft +
+  //         this.markerImageHolder.offsetWidth -
+  //         this.logoUI.clientWidth -
+  //         10
+  //       }px`;
+  //     }
+  //     this.logoUI.style.top = `${
+  //       this.markerImageHolder.offsetTop +
+  //       this.markerImageHolder.offsetHeight -
+  //       this.logoUI.clientHeight -
+  //       10
+  //     }px`;
+  //   }
+  // }
 
   private overrideOverflow() {
     // backup current state of scrolling and overflow
@@ -1736,7 +1736,7 @@ export class MarkerArea {
       }
     }
     this.positionMarkerImage();
-    this.positionLogo();
+    // this.positionLogo();
   }
 
   /**
@@ -1746,9 +1746,9 @@ export class MarkerArea {
    *
    * @param key - commercial license key.
    */
-  public addLicenseKey(key: string): void {
-    Activator.addKey(key);
-  }
+  // public addLicenseKey(key: string): void {
+  //   Activator.addKey(key);
+  // }
 
   private eventListeners = new EventListenerRepository();
   /**

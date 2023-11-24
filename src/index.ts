@@ -1,7 +1,7 @@
 export { MarkerArea } from './MarkerArea';
 export { MarkerAreaState } from './MarkerAreaState';
 
-export { Activator } from './core/Activator';
+// export { Activator } from './core/Activator';
 export { SvgHelper } from './core/SvgHelper';
 export { Style, StyleManager, StyleClass } from './core/Style';
 export { Settings, ColorSet, DisplayMode } from './core/Settings';
