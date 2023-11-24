@@ -1,6 +1,6 @@
 {
   "name": "image_anotation",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "image annotation",
   "main": "markerjs2.js",
   "module": "markerjs2.esm.js",
