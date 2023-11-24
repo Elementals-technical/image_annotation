@@ -1,6 +1,6 @@
 {
   "name": "image_anotation",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "image annotation",
   "main": "image_anotation.js",
   "module": "image_anotation.esm.js",
