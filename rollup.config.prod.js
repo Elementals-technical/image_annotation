@@ -10,7 +10,7 @@ import svgo from 'rollup-plugin-svgo';
 const outputDir = './dist/';
 
 const banner = `/* **********************************
-marker.js 2 version ${pkg.version}
+image_anotation.js 2 version ${pkg.version}
 https://markerjs.com
 
 copyright Alan Mendelevich
@@ -34,7 +34,7 @@ export default [{
   ]
 }, {
   input: "./dts/index.d.ts",
-  output: [{ file: "./dist/markerjs2.d.ts", format: "es" }],
+  output: [{ file: "./dist/image_anotation.d.ts", format: "es" }],
   plugins: [dts()],
 }, {
   input: ['src/index.ts'],
@@ -47,7 +47,7 @@ export default [{
     },
     {
       file: outputDir + pkg.main,
-      name: 'markerjs2',
+      name: 'image_anotation',
       format: 'umd',
       sourcemap: true,
       banner: banner

@@ -1,15 +1,15 @@
 {
   "name": "image_anotation",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "image annotation",
-  "main": "markerjs2.js",
-  "module": "markerjs2.esm.js",
-  "types": "markerjs2.d.ts", 
+  "main": "image_anotation.js",
+  "module": "image_anotation.esm.js",
+  "types": "image_anotation.d.ts", 
   "scripts": {
     "lint": "eslint src",
     "build": "yarn lint && rollup --config rollup.config.prod.js",
     "start": "rollup --config rollup.config.dev.js -w",
-    "docs": "typedoc --excludePrivate --excludeExternals --exclude \"src/index.ts\" -mode file --out docs src --name \"marker.js 2 Class Reference\" --disableSources --readme none"
+    "docs": "typedoc --excludePrivate --excludeExternals --exclude \"src/index.ts\" -mode file --out docs src --name \"image_anotation.js 2 Class Reference\" --disableSources --readme none"
   },
   "repository": {
     "type": "git",
